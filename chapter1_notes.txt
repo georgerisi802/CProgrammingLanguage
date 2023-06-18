@@ -1,0 +1,27 @@
+Chapter 1: A Tutorial Introduction
+
+- The goal is to see the essentiual elements of real programs
+	+ Write program test, compile successfully, load it, run it
+	+ Every program must have a main function, program execution begins here
+	
+- See "chapter1_hello.c"
+	+ Compile and run with command "gcc -ansi chapter1_hello.c". The "-ansi" tells the compiler to accept the legacy C syntax
+	+ printf() is a library funciton that prints the argument string to the terminal (unless another output is specified)
+		-> printf() never supplies a newline character
+		-> newline is indicated with "\n"
+	
+- See "chapter1_temperatures.c"
+	+ Demostrates simple variables and arithmetic
+	+ C ISO std only accepts "/* */" comments, not c++ style comments
+	+ The size of the data types (int, float) depends on your processor
+		-> In the 70s, ints were 16 bits. Now they are more likely to be 32 bits
+	+ While loop
+		-> Does not need to be enclosed in braces if it only contains a single statement, e.g. while(true) printf("hi");
+	+ printf() can take arguments indicating the format of the output
+		-> The % signs in the first argument indicate where to substitute the latter 2 arguments
+		-> The 4.0 following the first % tells the function to allocate 4 spaces with 0 spaces after the decimal
+		-> the 6.1 following the second % means allocate 6 spaces with 1 space after the decimal
+		
+- See "chapter1_temperatures_2.c"
+	+ Anatomy of the for loop: for(<start coindition>; <terminating condition>; <incrementation w/ each step>)
+	+ Like while, only needs brackets if contains multiple statements
