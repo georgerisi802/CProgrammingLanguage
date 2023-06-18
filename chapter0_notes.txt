@@ -1,0 +1,23 @@
+Chapter 0: Introduction
+
+- C is a "low-level language" meaning it deals with characters, numbers, addresses
+	+ These can be combined and manipulated with arithmetic and logical operators
+	+ C, however, provides no operations to deal directly with "composite objects"
+		-> Character strings, sets lists, arrays, etc..
+
+- C only provides storage allocation facility via static definition and local function variables
+	+ There is no heap or garbage collection
+	
+- C itself provides no I/O facilities--behavior must be invoked via explicitly-called functions
+
+- C only offers straight-forward, single-thread control flow constructs
+	+ No multiprogramming, parallelism, synchronization, or coroutines
+	
+- By default, arguments to functions are passed by value.
+	+ This makes it impossible for the called function to modify the argument in the caller
+	+ However, when desired, C pointers and address arithmetic allow arguments to be passed by reference
+		-> This allows the caller to modify the argument
+		-> Structures like arrays are passed using a pointer to the origin
+		
+- C is technically a strongly-typed language, it is relatively permissive about data type conversion
+	+ Lint can be used to apply very strict type checking (more on Lint later)
