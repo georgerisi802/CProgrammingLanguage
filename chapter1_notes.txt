@@ -24,4 +24,21 @@ Chapter 1: A Tutorial Introduction
 		
 - See "chapter1_temperatures_2.c"
 	+ Anatomy of the for loop: for(<start coindition>; <terminating condition>; <incrementation w/ each step>)
-	+ Like while, only needs brackets if contains multiple statements
+	+ Like while, for only needs brackets if contains multiple statements
+	
+- See "chapter1_simpleIO.c"
+	+ putchar() and getchar() facilitate single-character IO
+	
+- See "chapter1_count_characters.c"
+	+ The EOF symbol (in Ubuntu, at least) is ctrl-d
+	
+- See "chapter1_count_lines.c"
+	+ Single quotes are characters 'n', double quotes are strings "hello"
+	
+- See "chapter1_count_words.c"
+	+ This is funcitonally similar to the Linux utility wc
+	+ C does not support booleans, so this function defines symbolic constants TRUE = 1, FALSE = 0
+
+- Arrays
+	+ Array size is constant at compile time
+	+ 
