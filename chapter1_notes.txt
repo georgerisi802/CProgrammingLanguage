@@ -40,5 +40,22 @@ Chapter 1: A Tutorial Introduction
 	+ C does not support booleans, so this function defines symbolic constants TRUE = 1, FALSE = 0
 
 - Arrays
-	+ Array size is constant at compile time
+	+ Array size is constant at compile time and size cannot be modified using array declaration while program is running
+	+ Dynamic array-like structures exist and are created using pointes (more to come in chapter 6)
+	+ See "chapter1_count_array.c"
+	
+- Functions
+	+ Format is: funcitonName(argumentList, ifApplicable)
+			argument declarations, ifApplicable
+			{delcarations, statements, return statement ex. return(value)}
+		-> The types of the arguments must be declared between the function name line and the opening curly brace
+	+ Return type not specified in declaration, more on this in chapter 4
+		-> return staterment is not required for null functions, falling off end of function returns control to caller
+	+ Functions can be defined in any order
+	+ Arguments are passed by value
+		-> This isolates the data so that the called code cannot manipulate passed data (unintentially or intentionally)
+	+ See "chapter1_function.c"
+	
+- Character Arrays
 	+ 
+	
